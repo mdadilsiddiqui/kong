@@ -305,6 +305,7 @@ end
 local localhosts = {
   ipv4 = "127.0.0.1",
   ipv6 = "0000:0000:0000:0000:0000:0000:0000:0001",
+  localhost = "localhost",
 }
 
 
