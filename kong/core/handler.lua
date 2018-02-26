@@ -523,6 +523,7 @@ return {
         local now = get_now()
         ctx.KONG_WAITING_TIME = now - ctx.KONG_ACCESS_ENDED_AT -- time spent waiting for a response from upstream
         ctx.KONG_HEADER_FILTER_STARTED_AT = now
+		header[constants.HEADERS.UPSTREAM_STATUS]  = ngx.status
       end
     end,
     after = function(ctx)
